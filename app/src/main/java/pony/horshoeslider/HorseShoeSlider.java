@@ -396,7 +396,6 @@ public class HorseShoeSlider extends View {
                 if (mThumb.mIsThumbSelected) {
                     onSliderActionMove(mThumb, motionEvent);
                     invalidate();
-                    break;
                 }
                 break;
             }
