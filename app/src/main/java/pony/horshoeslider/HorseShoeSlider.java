@@ -104,7 +104,7 @@ public class HorseShoeSlider extends View {
 
         mThumbArcStrokeWidth = dpToPixels(THUMB_ARC_STROKE_WIDTH);
 
-        setThumbReading(0, thumbReading);
+        setThumbReading(thumbReading);
     }
 
     private void initPainters() {
@@ -485,7 +485,7 @@ public class HorseShoeSlider extends View {
         mRemoveThumb = removeThumb;
     }
 
-    public void setThumbReading(int i, float reading) {
+    public void setThumbReading(float reading) {
         mThumb.mReading = reading;
         mThumb.mLastReading = reading;
         setThumbAngle(mThumb, getAngleFromReading(mThumb.mReading));
