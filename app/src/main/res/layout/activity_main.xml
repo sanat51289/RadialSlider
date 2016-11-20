@@ -9,10 +9,9 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="pony.horshoeslider.MainActivity">
+    android:paddingTop="@dimen/activity_vertical_margin">
 
-    <pony.horshoeslider.HorseShoeSlider
+    <san.radialSlider.Slider
         android:id="@+id/slider"
         android:layout_width="300dp"
         android:layout_height="300dp"
@@ -25,7 +24,7 @@
         slider_attributes:thumb_color="@android:color/holo_blue_light"
         slider_attributes:arc_color="@android:color/holo_blue_light"
         slider_attributes:thumb_reading_text_size="14dp"
-        slider_attributes:thumb_size="14dp"
+        slider_attributes:thumb_radius="14dp"
         slider_attributes:thumb_text_color="@android:color/black"
     />
 </RelativeLayout>

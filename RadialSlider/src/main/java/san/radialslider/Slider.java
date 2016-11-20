@@ -1,4 +1,4 @@
-package pony.horshoeslider;
+package san.radialslider;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -16,9 +16,12 @@ import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.View;
 
-public class HorseShoeSlider extends View {
-    private static final String TAG = "HorshoeSlider";
+/**
+ * Copyright © 2016 Zonoff, Inc.  All Rights Reserved.
+ */
 
+public class Slider extends View {
+    private static final String TAG = "Slider";
     private static final int DIAL_ARC_STROKE_WIDTH = 22;
     private static final int THUMB_ARC_STROKE_WIDTH = 5;
     private static final int ALPHA_FOR_THUMB = 255;
@@ -64,15 +67,15 @@ public class HorseShoeSlider extends View {
         mListener = listener;
     }
 
-    public HorseShoeSlider(Context context) {
+    public Slider(Context context) {
         this(context, null);
     }
 
-    public HorseShoeSlider(Context context, AttributeSet attrs) {
+    public Slider(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public HorseShoeSlider(Context context, AttributeSet attrs, int defStyleAttr) {
+    public Slider(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
         TypedArray attributes = context.getTheme().obtainStyledAttributes(attrs, R.styleable.slider_attributes, defStyleAttr, 0);
