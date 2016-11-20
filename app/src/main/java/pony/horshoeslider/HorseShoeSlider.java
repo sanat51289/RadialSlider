@@ -43,7 +43,7 @@ public class HorseShoeSlider extends View {
     private int mCircleRadius;
     private final float mArcStartAngle = 120;
     private final float mArcSweepAngle = 300;
-    private final float mThumbAngleLimit1 = -120;//in degrees ofcourse
+    private final float mThumbAngleLimit1 = -120;//in degrees
     private final float mThumbAngleLimit2 = -60;
     private int mStrokeWidth;
     private int mMin;
@@ -82,7 +82,6 @@ public class HorseShoeSlider extends View {
         initPainters();
     }
 
-    // common initializer method
     private void initByAttributes(TypedArray attributes) {
         Log.v(TAG, "initAttributes called");
 
@@ -121,7 +120,6 @@ public class HorseShoeSlider extends View {
 
         drawArc(canvas);
 
-        //Only if you don't want to remove thumb then draw it.
         if (!mRemoveThumb) {
             drawThumb(canvas, mThumb);
         }
@@ -381,7 +379,7 @@ public class HorseShoeSlider extends View {
                 // start moving the thumb (this is the first touch)
                 int x = (int) motionEvent.getX();
                 int y = (int) motionEvent.getY();
-                //amking sure the user has touched the thumb
+                //making sure the user has touched the thumb
 
                 if (x < mThumb.mX + HIT_CONST && x > mThumb.mX - HIT_CONST && y < mThumb.mY + HIT_CONST && y > mThumb.mY - HIT_CONST) {
                     if (mThumb.mIsThumbEnabled) {
