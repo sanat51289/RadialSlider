@@ -192,7 +192,8 @@ public class Slider extends View {
 
     private void updateTextInsideTheThumb(int thumbX, int thumbY, Canvas canvas, int reading) {
         String text = String.valueOf(reading);
-        canvas.drawText(text, thumbX - (mThumbRadius * 0.75f), thumbY + (mThumbRadius / 3), mTextPaint);
+        float horizontalAdjustmentFactor = text.length() >= 3 ? 0.75f : 0.65f;
+        canvas.drawText(text, thumbX - (mThumbRadius * horizontalAdjustmentFactor), thumbY + (mThumbRadius / 3), mTextPaint);
     }
 
     private void drawArcBetweenThumbs(Canvas canvas, Thumb thumb) {
