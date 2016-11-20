@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:slider_attributes="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pony.horshoeslider.MainActivity">
+
+    <pony.horshoeslider.HorseShoeSlider
+        android:id="@+id/slider"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        slider_attributes:background_padding="30dp"
+        slider_attributes:max="100"
+        slider_attributes:min="35"
+        slider_attributes:stroke_width="12dp"
+        slider_attributes:thumb_color="@android:color/holo_blue_light"
+        slider_attributes:arc_color="@android:color/holo_blue_light"
+        slider_attributes:thumb_reading_text_size="14dp"
+        slider_attributes:thumb_size="14dp"
+        slider_attributes:thumb_text_color="@android:color/black"
+    />
+</RelativeLayout>
