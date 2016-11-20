@@ -1,1 +1,1 @@
-# HorshoeSlider
+# RadialSlider
