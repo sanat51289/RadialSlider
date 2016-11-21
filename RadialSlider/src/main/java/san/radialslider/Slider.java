@@ -16,9 +16,6 @@ import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.View;
 
-/**
- * Copyright © 2016 Zonoff, Inc.  All Rights Reserved.
- */
 
 public class Slider extends View {
     private static final String TAG = "Slider";
