@@ -57,7 +57,7 @@ public class Slider extends View {
 
         void onSliderUp(float reading);
 
-        void onThumbSelected(boolean selected);
+        void onThumbSelected();
     }
 
     public void registerForSliderUpdates(IListenForSliderState listener) {
@@ -426,8 +426,8 @@ public class Slider extends View {
     private void setThumbSelected(boolean selected) {
         if (mThumb.mIsThumbEnabled) {
             mThumb.mIsThumbSelected = selected;
-            if (mListener != null) {
-                mListener.onThumbSelected(selected);
+            if (mListener != null && selected) {
+                mListener.onThumbSelected();
             }
         }
     }
