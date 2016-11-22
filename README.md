@@ -16,7 +16,7 @@ By adding the following line in your **dependencies** block of your app module:
 
 
 ###Sample usage:
-`
+```
 <san.radialslider.Slider
         slider_attributes:max="100"
         slider_attributes:min="0"
@@ -27,7 +27,7 @@ By adding the following line in your **dependencies** block of your app module:
         slider_attributes:thumb_radius="16dp"
         slider_attributes:thumb_text_color="@android:color/black"
     />
-`
+```
 
 ###Notes:
 The library uses appcompat-v7-24.0.0.
