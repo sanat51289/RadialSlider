@@ -7,7 +7,8 @@ Android Studio to compile and use
 
 ###How to include it?
 By adding the following line in your dependencies block of your app module:
-```compile 'com.github.sanat51289:radialslider:0.0.1' ```
+
+``` compile 'com.github.sanat51289:radialslider:0.0.1' ```
 
 ###What does it look like:
 
