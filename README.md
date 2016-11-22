@@ -30,8 +30,11 @@ By adding the following line in your dependencies block of your app module:
 ```
 
 ###Notes:
-The library uses appcompat-v7-24.0.0. if that becomes a conflicting issue you can explicitly exclude the download of appcompat by adding the following line:
+The library uses appcompat-v7-24.0.0.
+If that's a conflicting issue in your project, you can explicitly exclude the download of appcompat by adding the following line:
 
  ```
- exclude group: 'com.android.support', module: 'appcompat-v7'
+ compile ('com.github.sanat51289:radialslider:0.0.1') {
+         exclude group: 'com.android.support', module: 'appcompat-v7'
+     }
  ```
