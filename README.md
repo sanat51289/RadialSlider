@@ -31,7 +31,7 @@ By adding the following line in your **dependencies** block of your app module:
 
 ###Notes:
 The library uses appcompat-v7-24.0.0.
-If that's a conflicting issue in your project, you can explicitly exclude the download of appcompat by adding the following line:
+If that creates a conflict in your project, you can explicitly exclude the download of appcompat by adding the following line:
 
  ```
  compile ('com.github.sanat51289:radialslider:0.0.1') {
