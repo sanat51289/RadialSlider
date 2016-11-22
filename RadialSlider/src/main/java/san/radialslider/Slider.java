@@ -189,7 +189,16 @@ public class Slider extends View {
 
     private void updateTextInsideTheThumb(int thumbX, int thumbY, Canvas canvas, int reading) {
         String text = String.valueOf(reading);
-        float horizontalAdjustmentFactor = text.length() >= 3 ? 0.75f : 0.65f;
+
+        float horizontalAdjustmentFactor;
+        if (text.length() == 1) {
+            horizontalAdjustmentFactor = 0.35f;
+        } else if (text.length() <= 2) {
+            horizontalAdjustmentFactor = 0.65f;
+        } else {
+            horizontalAdjustmentFactor = 0.75f;
+        }
+
         canvas.drawText(text, thumbX - (mThumbRadius * horizontalAdjustmentFactor), thumbY + (mThumbRadius / 3), mTextPaint);
     }
 

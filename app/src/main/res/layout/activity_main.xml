@@ -19,7 +19,7 @@
         android:background="@android:color/transparent"
         slider_attributes:background_padding="30dp"
         slider_attributes:max="100"
-        slider_attributes:min="35"
+        slider_attributes:min="0"
         slider_attributes:stroke_width="12dp"
         slider_attributes:thumb_color="@android:color/holo_blue_light"
         slider_attributes:arc_color="@android:color/holo_blue_light"
