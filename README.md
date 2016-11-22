@@ -28,3 +28,10 @@ By adding the following line in your dependencies block of your app module:
         slider_attributes:thumb_text_color="@android:color/black"
     />
 ```
+
+###Notes:
+The library uses appcompat-v7-24.0.0. if that becomes a conflicting issue you can explicitly exclude the download of appcompat by adding the following line:
+
+ ```
+ exclude group: 'com.android.support', module: 'appcompat-v7'
+ ```
