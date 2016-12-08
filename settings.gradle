@@ -1,1 +1,1 @@
-include ':app', ':RadialSlider'
+include ':sampleApp', ':RadialSlider'
