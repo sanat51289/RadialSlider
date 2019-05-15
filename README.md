@@ -1,21 +1,21 @@
 ### RadialSlider
 A library that mimics the native Android slider but in a radial fashion.
 
-###Requirements:
+### Requirements:
 1. Android SDK >= 14
 1. Android Studio to compile and use
 
-###How to include it?
+### How to include it?
 Add following line under **dependencies** section of module's build.gradle:
 
 ` compile 'com.github.sanat51289:radialslider:0.0.1' `
 
-###What does it look like:
+### What does it look like:
 
 ![screenshot](https://cloud.githubusercontent.com/assets/5086113/20528365/f42c014c-b099-11e6-87c8-3bfd28e450be.png)
 
 
-###Sample usage:
+### Sample usage:
 ```
 <san.radialslider.Slider
         slider_attributes:max="100"
@@ -29,7 +29,7 @@ Add following line under **dependencies** section of module's build.gradle:
     />
 ```
 
-###Notes:
+### Notes:
 Presently, this library lists appcompat-v7-24.0.0 as dependency.
 If that creates a conflict in your project, you can explicitly exclude the download of appcompat by adding the following line:
 
